@@ -23,7 +23,7 @@ module.exports.run = async function({ api, event }) {
 │ 𝗢𝗪𝗡𝗘𝗥 𝗗𝗘𝗧𝗔𝗜𝗟𝗦
 ├───────────────
 │👤 𝐍𝐚𝐦𝐞 : 𝐓𝐚𝐮𝐡𝐢𝐝 𝐇𝐚𝐬𝐬𝐚𝐧
-│🚹 𝐆𝐞𝐧𝐝𝐞𝐫 : Maile
+│🚹 𝐆𝐞𝐧𝐝𝐞𝐫 : Male
 │❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧 : Single
 │🎂 𝐀𝐠𝐞 : 18+
 │🕌 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧 : Islam
@@ -49,7 +49,7 @@ module.exports.run = async function({ api, event }) {
  attachment: fs.createReadStream(__dirname + "/cache/owner.jpg")
  }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/owner.jpg"));
 
- return request("https://i.imgur.com/g3hlQ0Z.jpeg") //এখানে আপনার ছবির Imgur link বসাবেন✅
+ return request("https://i.imgur.com/ryNcvi2.jpeg") //এখানে আপনার ছবির Imgur link বসাবেন✅
  .pipe(fs.createWriteStream(__dirname + '/cache/owner.jpg'))
  .on('close', () => callback());
 };
